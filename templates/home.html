@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+    <title>
+        CareerPilotAI
+    </title>
+
+    <style>
+
+        body{
+
+            text-align:center;
+
+            margin-top:150px;
+
+            background-image:url("{{ url_for('static', filename='Background.png') }}");
+
+            background-position:center;
+
+            background-repeat:no-repeat;
+
+            background-size:cover;
+
+            height:65vh;
+
+        }
+
+        h1{
+
+            font-family:Arial, sans-serif;
+
+            font-size:55px;
+
+            color:#2D2A72;
+
+            margin-bottom:10px;
+
+        }
+
+        h2{
+
+            font-family:Arial, sans-serif;
+
+            font-size:25px;
+
+            color:#2D2A72;
+
+            margin-top:0px;
+
+            margin-bottom:50px;
+
+        }
+
+        h3{
+
+            font-family:Arial, sans-serif;
+
+            font-size:20px;
+
+            color:#3E3E3E;
+
+            margin-bottom:5px;
+
+        }
+
+        h4{
+
+            font-family:Arial, sans-serif;
+
+            font-size:18px;
+
+            color:#3E3E3E;
+
+            margin-bottom:5px;
+
+        }
+
+        input{
+
+            padding:5px;
+
+            border-radius:5px;
+
+            border:1px solid gray;
+
+        }
+
+        button{
+
+            padding:10px 20px;
+
+            font-size:16px;
+
+            background-color:#2D2A72;
+
+            color:white;
+
+            border:none;
+
+            border-radius:5px;
+
+            cursor:pointer;
+
+            margin-top:20px;
+
+        }
+
+        button:hover{
+
+            background-color:#1f1c5c;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+
+        <h1>
+            CareerPilot AI
+        </h1>
+
+        <h2>
+            Upload. Analyse. Learn. Test
+        </h2>
+
+        <h3>
+            Upload Resume
+        </h3>
+
+        <input type="file" name="resume">
+
+        <br><br>
+
+        <h4>
+            Enter the job you want to apply for
+        </h4>
+
+        <input 
+        type="text"
+        name="job_role"
+        placeholder="Example: Doctor, Data Scientist, Lawyer"
+        style="width:255px;">
+
+        <br><br>
+
+        <button type="submit">
+
+            Analyze Resume
+
+        </button>
+
+    </form>
+
+</body>
+
+</html>
+
