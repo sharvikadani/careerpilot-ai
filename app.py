@@ -11,7 +11,7 @@ app = Flask(__name__)
 # Gemini API setup
 
 genai.configure(
-    api_key="AIzaSyBLYnbjp7p8X8nh-cFzk7760NlH7_ppMKY"
+    api_key=""
 )
 
 model = genai.GenerativeModel(
